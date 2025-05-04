@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FURIA Online Webchat</title>
+    <link href="/main.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@stomp/stompjs@7.0.0/bundles/stomp.umd.min.js"></script>
+    <script src="/app.js" defer></script>
+</head>
+<body>
+<div class="chat-container">
+    <header class="chat-header">
+        <div class="furia-logo-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf9IlIoDAoMWCaofQ6rp1WgGBgBALXhNk-3w&s" alt="FURIA Esports" class="furia-logo">
+        </div>
+        <h1>FURIA Online Webchat</h1>
+
+        <div id="logged-user" class="logged-user hidden">Você está logado como: </div>
+    </header>
+
+    <main>
+        <section id="login-section" class="login-panel">
+            <input type="text" id="name" placeholder="Digite seu nome..." />
+            <button id="connect">Entrar</button>
+        </section>
+
+        <section id="chat-section" class="chat-panel hidden">
+            <div class="chat-messages" id="greetings"></div>
+
+            <div class="chat-input-area">
+                <input type="text" id="message" placeholder="Digite sua mensagem..." />
+                <button id="send">📨</button>
+                <button id="disconnect" class="disconnect-btn">Sair</button>
+            </div>
+        </section>
+    </main>
+</div>
+</body>
+</html>
