@@ -27,4 +27,4 @@ docker-compose up
 ```
 
 ## 👀 Exemplo de uso
-[Gravação de Tela 2025-05-04 233619.mp4](../../../../../Videos/Grava%C3%A7%C3%B5es%20de%20Tela/Grava%C3%A7%C3%A3o%20de%20Tela%202025-05-04%20233619.mp4)
+https://github.com/user-attachments/assets/2afdcab8-75d2-4dbd-9e57-e6b8d6052dba
