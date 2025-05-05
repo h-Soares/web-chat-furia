@@ -1,6 +1,6 @@
 # Webchat online com Chatbot - FURIA
 
-Webchat online desenvolvido para a vaga de Assistente de Engenharia de Software da FURIA Tech.
+Webchat online desenvolvido para a vaga de Assistente de Engenharia de Software da FURIA Tech
 
 # ⚒️ Funcionalidades
 * Envio de mensagens públicas
