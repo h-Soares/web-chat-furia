@@ -8,13 +8,22 @@ import org.springframework.stereotype.Service;
 @Service
 public class MessageService {
     private final SimpMessagingTemplate messagingTemplate;
+    private final OllamaService ollamaService;
 
-    public MessageService(SimpMessagingTemplate messagingTemplate) {
+    public MessageService(SimpMessagingTemplate messagingTemplate, OllamaService ollamaService) {
         this.messagingTemplate = messagingTemplate;
+        this.ollamaService = ollamaService;
     }
 
     public void sendPublicMessage(Message message) {
         messagingTemplate.convertAndSend("/topic/public", message);
+
+        if(message.content().startsWith("/bot ")) {
+            String messageToSend = message.content().replace("/bot ", "");
+            String botResponse = ollamaService.sendMessage(messageToSend);
+            Message botMessage = new Message("🤖 FuriaBot", botResponse);
+            messagingTemplate.convertAndSend("/topic/public", botMessage);
+        }
     }
 
     public void sendPrivateMessage(SendPrivateMessage privateMessage) {
