@@ -1,6 +1,6 @@
 # Webchat online - FURIA
 
-Webchat online desenvolvido para a vaga de Assistente de Engenharia de Software da FURIA Tech
+Webchat online desenvolvido para a vaga de Assistente de Engenharia de Software da FURIA Tech.
 
 # ⚒️ Funcionalidades
 * Envio de mensagens públicas
@@ -12,7 +12,7 @@ Webchat online desenvolvido para a vaga de Assistente de Engenharia de Software 
 * Java
 * Spring Boot
 * WebSocket com STOMP
-* Ollama
+* Ollama (para rodar LLM localmente)
 * Spring AI (Ollama)
 
 ## 🐳 Docker
@@ -29,4 +29,6 @@ docker-compose up
 ```
 
 ## 👀 Exemplo de uso
-https://github.com/user-attachments/assets/2afdcab8-75d2-4dbd-9e57-e6b8d6052dba
+https://github.com/user-attachments/assets/2b7a6c92-6b70-4d58-b76c-af9fba29de71
+
+
