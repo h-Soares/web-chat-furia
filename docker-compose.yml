@@ -14,11 +14,16 @@ services:
     image: ollama/ollama:latest
     ports:
       - "11434:11434"
-    volumes:
-      - ./model_files:/model_files
-    entrypoint: ["/bin/sh", "/model_files/run_ollama.sh"]
     networks:
       - app-network
+    restart: always
+    entrypoint: >
+      /bin/sh -c "
+        ollama serve & 
+        sleep 5 && 
+        ollama run gemma3:1b &&
+        wait
+      "
 
 networks:
   app-network:
