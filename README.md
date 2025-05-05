@@ -6,11 +6,13 @@ Webchat online desenvolvido para a vaga de Assistente de Engenharia de Software 
 * Envio de mensagens públicas
 * Envio de mensagens privadas
 * Interação com bot
+* Destaques na coloração para diferenciação de mensagens públicas e privadas
 
 ## 🛠️ Tecnologias utilizadas
 * Java
-* WebSocket com STOMP
 * Spring Boot
+* WebSocket com STOMP
+* Ollama
 * Spring AI (Ollama)
 
 ## 🐳 Docker
