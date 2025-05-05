@@ -4,8 +4,8 @@ Webchat online desenvolvido para a vaga de Assistente de Engenharia de Software 
 
 # ⚒️ Funcionalidades
 * Envio de mensagens públicas
-* Envio de mensagens privadas
-* Interação com bot
+* Envio de mensagens privadas (mensagem começando com **/private:{Usuário}**)
+* Interação com bot (mensagem começando com **/bot**)
 * Destaques na coloração para diferenciação de mensagens públicas e privadas
 
 ## 🛠️ Tecnologias utilizadas
@@ -15,6 +15,14 @@ Webchat online desenvolvido para a vaga de Assistente de Engenharia de Software 
 * Docker
 * Ollama (para rodar LLM localmente)
 * Spring AI (Ollama)
+
+## 📷 Layout da aplicação
+
+### Tela inicial
+![image](https://github.com/user-attachments/assets/c7969c42-1ccc-4c47-8bea-a53e7737a0bf)
+
+### Usuário logado
+![image](https://github.com/user-attachments/assets/0ee52fe4-b6ac-4546-859a-f92363d3730f)
 
 ## 🐳 Docker
 Para utilizar a aplicação via Docker, siga os passos:
