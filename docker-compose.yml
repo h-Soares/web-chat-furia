@@ -1,0 +1,25 @@
+version: "3.8"
+
+services:
+  web-chat:
+    build: .
+    ports:
+      - "8080:8080"
+    depends_on:
+      - ollama
+    networks:
+      - app-network
+
+  ollama:
+    image: ollama/ollama:latest
+    ports:
+      - "11434:11434"
+    volumes:
+      - ./model_files:/model_files
+    entrypoint: ["/bin/sh", "/model_files/run_ollama.sh"]
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
