@@ -12,6 +12,7 @@ Webchat online desenvolvido para a vaga de Assistente de Engenharia de Software 
 * Java
 * Spring Boot
 * WebSocket com STOMP
+* Docker
 * Ollama (para rodar LLM localmente)
 * Spring AI (Ollama)
 

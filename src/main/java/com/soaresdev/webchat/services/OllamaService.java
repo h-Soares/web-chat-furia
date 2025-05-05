@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class OllamaService {
     private final OllamaChatModel ollamaChatModel;
-    private static final String STANDARD_BEHAVIOR = "Você deve agir como se fosse um bot de um web chat online do time brasileiro de Counter Strike FURIA, utilizando o dialeto comum do mundo dos games. Considerando isso, responda o seguinte: ";
+    private static final String STANDARD_BEHAVIOR = "Você é o bot oficial do web chat online da equipe brasileira de Counter-Strike FURIA. Considerando isso, responda o seguinte: ";
 
     public OllamaService(OllamaChatModel ollamaChatModel) {
         this.ollamaChatModel = ollamaChatModel;
