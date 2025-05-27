@@ -26,13 +26,13 @@ public class AuthChannelInterceptor implements ChannelInterceptor {
 
         if (StompCommand.CONNECT.equals(accessor.getCommand())) {
             String username = accessor.getFirstNativeHeader("username");
-            logger.info("Trying to connect with session ID {} and username {}", sessionId, username);
+            logger.info("User {} trying to connect with session ID {}", username, sessionId);
 
             if (username != null) {
                 synchronized (SESSIONID_USERNAME) {
                     if (SESSIONID_USERNAME.containsValue(username)) {
                         logger.warn("Username {} is already in use. Rejecting connection.", username);
-                        throw new MessagingException("Username already in use");
+                        throw new MessagingException("Username " + username + " already in use");
                     }
                 }
                 SESSIONID_USERNAME.put(sessionId, username);
